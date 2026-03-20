@@ -1,19 +1,23 @@
-<!doctype html>
+
+              <!DOCTYPE html>!
 <html lang="fr">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>TAPE ZINE — blog musique</title>
 
+  <title>Musical Soul — blog musique</title>
+  <meta name="description" content="Musical Soul — un blog musique indépendant : reviews, playlists, nouveautés et concerts. Pas de comm', juste des sons." />
+
+  <meta property="og:title" content="Musical Soul — blog musique" />
+  <meta property="og:description" content="Parce que la musique mérite mieux qu'un like." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="img/og-cover.jpg" />
+  <meta property="og:url" content="https://tonpseudo.github.io/tape-zine/" />
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
- 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
-
-
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=IBM+Plex+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="project.css" />
 </head>
 
@@ -21,18 +25,18 @@
 
   <div class="taplink-wrap mx-auto">
 
-
     <header class="zine-top sticky-top">
       <nav class="navbar py-3">
         <div class="container-fluid px-3 px-md-4">
-          <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+          <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
             <span class="brand-slash">/</span>
-            <span class="brand-name">tape</span>
-            <span class="brand-sub d-none d-md-inline">non commercial project</span>
+            <span class="brand-name">Musical Soul</span>
+            <span class="brand-sub d-none d-md-inline">Music over everything, says more than words ever could.</span>
           </a>
 
           <button class="navbar-toggler border-0 zine-burger" type="button"
-                  data-bs-toggle="offcanvas" data-bs-target="#navDrawer" aria-controls="navDrawer">
+                  data-bs-toggle="offcanvas" data-bs-target="#navDrawer" aria-controls="navDrawer"
+                  aria-label="Ouvrir le menu">
             <span class="navbar-toggler-icon"></span>
           </button>
 
@@ -43,11 +47,11 @@
             </div>
             <div class="offcanvas-body">
               <div class="d-grid gap-2">
-                <a class="btn btn-outline-dark rounded-pill" href="#drops" data-bs-dismiss="offcanvas">Drops</a>
+                <a class="btn btn-outline-dark rounded-pill" href="index.html" data-bs-dismiss="offcanvas">Accueil</a>
+                <a class="btn btn-dark rounded-pill" href="index3.html" data-bs-dismiss="offcanvas">Drops</a>
                 <a class="btn btn-outline-dark rounded-pill" href="#reviews" data-bs-dismiss="offcanvas">Reviews</a>
-                <a class="btn btn-outline-dark rounded-pill" href="#playlists" data-bs-dismiss="offcanvas">Playlists</a>
-                <a class="btn btn-outline-dark rounded-pill" href="#cases" data-bs-dismiss="offcanvas">Cases</a>
-                <a class="btn btn-dark rounded-pill" href="#contact" data-bs-dismiss="offcanvas">Contact</a>
+                <a class="btn btn-outline-dark rounded-pill" href="index2.html" data-bs-dismiss="offcanvas">Playlist</a>
+                <a class="btn btn-outline-dark rounded-pill" href="#contact" data-bs-dismiss="offcanvas">Contact</a>
               </div>
             </div>
           </div>
@@ -59,36 +63,27 @@
     <main class="px-3 px-md-4 pb-4 pb-md-5">
 
       <div class="row g-4 g-md-5">
-   
+
+        <!-- Colonne de gauche -->
         <div class="col-lg-6">
 
-     
           <section class="zcard poster taped reveal">
             <div class="poster-media">
-              <!-- OPTION A : mets une vraie image (décommente et place ton fichier)
-              <img src="assets/featured.jpg" alt="Artiste à la une" class="poster-img">
-              -->
-              <!-- OPTION B : placeholder stylé (par défaut) -->
-              <div class="poster-placeholder"></div>
-
+              <img src="img/hak-portrait.jpg" alt="Hak Baker, artiste folk urbain britannique" class="poster-img">
               <div class="poster-scribble s1" aria-hidden="true"></div>
               <div class="poster-scribble s2" aria-hidden="true"></div>
             </div>
 
             <div class="poster-overlay">
-              <div class="marker small">SMM? non. MUSIC.</div>
-              <h1 class="title">Artiste à la une</h1>
-
-              <p class="desc">
-                Une mini-bio + pourquoi tu l’écoutes. 2–3 lignes qui claquent.
+              <h1 class="title">Hak Baker</h1>
+              <p class="poster-desc">
+                De la prison aux scènes de festival, Hak Baker a fait du chaos de sa vie le carburant d'un folk urbain et brut qu'il appelle le "G-folk".
               </p>
-
               <div class="d-flex gap-2 flex-wrap mt-3">
                 <a class="btn btn-dark rounded-pill px-4" href="#reviews">Lire la review</a>
                 <a class="btn btn-outline-dark rounded-pill px-4" href="#playlists">Voir la playlist</a>
               </div>
-
-              <a class="mini-btn mt-3" href="#drops">↓ aller aux drops</a>
+              <a class="mini-btn mt-3" href="#drops">↓ New drops</a>
             </div>
           </section>
 
@@ -96,20 +91,16 @@
             <div class="notebook-title">
               <span class="marker">ABOUT ME</span>
             </div>
-
             <div class="notebook-page">
               <div class="notebook-spiral" aria-hidden="true"></div>
-
               <div class="notebook-content">
-                <p class="mb-2"><span class="k">Nom :</span> Rox / ton pseudo</p>
-                <p class="mb-3"><span class="k">Vibe :</span> fanzine, rap, pop, indie, etc.</p>
-
+                <p class="mb-2"><span class="k">Nom :</span> Roksana</p>
+                <p class="mb-3"><span class="k">Vibe :</span> Rock, rap, pop, indie, etc.</p>
                 <ul class="small text-secondary mb-3">
                   <li>1 review / semaine</li>
                   <li>1 playlist / mois</li>
                   <li>concerts + photos</li>
                 </ul>
-
                 <div class="d-flex flex-wrap gap-2">
                   <span class="chip">rap</span>
                   <span class="chip">indie</span>
@@ -120,62 +111,75 @@
             </div>
           </section>
 
-    
           <section class="zcard why reveal delay-2 mt-4">
             <div class="marker">Pourquoi ce blog ?</div>
             <p class="text-secondary mb-3">
-              Décris ta mission : découvrir, sentir, recommander, documenter — pas juste “poster”.
+              Parce que la musique mérite mieux qu'un like. Découvrir, ressentir, partager. Pas juste scroller.
             </p>
-
             <div class="why-badges">
               <span class="why-pill">découvrir</span>
               <span class="why-pill">curation</span>
               <span class="why-pill">reviews</span>
               <span class="why-pill">live</span>
             </div>
-
             <div class="why-arrows" aria-hidden="true"></div>
+          </section>
+
+          <!-- FAVS -->
+          <section id="cases" class="zcard reveal delay-2 mt-4">
+            <div class="d-flex align-items-end justify-content-between gap-3 flex-wrap">
+              <div>
+                <div class="marker">FAVS</div>
+                <h2 class="h4 fw-bold mb-1">My musical obsessions</h2>
+                <p class="text-secondary mb-0">Sans honte et sans modération.</p>
+              </div>
+            </div>
+            <div class="cases-grid mt-3">
+              <div class="case-tile"><img src="img/img.jpg" alt="Pochette d'album — sélection musicale"></div>
+              <div class="case-tile"><img src="img/img1.jpg" alt="Pochette d'album — sélection musicale"></div>
+              <div class="case-tile"><img src="img/img2.jpg" alt="Pochette d'album — sélection musicale"></div>
+              <div class="case-tile"><img src="img/img3.jpg" alt="Pochette d'album — sélection musicale"></div>
+              <div class="case-tile"><img src="img/img4.jpg" alt="Pochette d'album — sélection musicale"></div>
+              <div class="case-tile"><img src="img/img5.jpg" alt="Pochette d'album — sélection musicale"></div>
+              <div class="case-tile"><img src="img/img6.jpg" alt="Pochette d'album — sélection musicale"></div>
+              <div class="case-tile"><img src="img/img10.jpg" alt="Pochette d'album — sélection musicale"></div>
+              <div class="case-tile"><img src="img/img8.jpg" alt="Pochette d'album — sélection musicale"></div>
+            </div>
           </section>
 
         </div>
 
-        <!-- RIGHT COLUMN -->
+        <!-- Colonne de droite -->
         <div class="col-lg-6">
 
-          <!-- GREEN crumple with receipts -->
           <section id="playlists" class="zcard green taped reveal">
             <div class="marker">PLAYLISTS</div>
-
             <div class="receipt lift">
               <div class="receipt-top">
                 <div class="receipt-title">Playlist du mois</div>
                 <div class="receipt-sub">12 titres • 45 min</div>
               </div>
-
               <ol class="receipt-list">
-                <li><span>01</span><span>Artiste — Titre</span></li>
-                <li><span>02</span><span>Artiste — Titre</span></li>
-                <li><span>03</span><span>Artiste — Titre</span></li>
-                <li><span>04</span><span>Artiste — Titre</span></li>
-                <li><span>05</span><span>Artiste — Titre</span></li>
+                <li><span>01</span><span>King Krule — EASY EASY</span></li>
+                <li><span>02</span><span>Hak Baker — VENEZUELA RIDDIM</span></li>
+                <li><span>03</span><span>Hak Baker — WINDRUSH BABY</span></li>
+                <li><span>04</span><span>Hak Baker — CONUNDRUM</span></li>
+                <li><span>05</span><span>Hak Baker — I DON'T KNOW</span></li>
               </ol>
-
               <div class="barcode" aria-hidden="true"></div>
-              <a class="btn btn-dark rounded-pill w-100 mt-3" href="#">Ouvrir (Spotify/Deezer)</a>
+              <a class="btn btn-dark rounded-pill w-100 mt-3" href="index2.html">Ouvrir la playlist</a>
             </div>
 
             <div class="receipt lift mt-3">
               <div class="receipt-top">
                 <div class="receipt-title">Newsletter</div>
-                <div class="receipt-sub">1 mail / semaine • “les pépites”</div>
+                <div class="receipt-sub">"les pépites"</div>
               </div>
-
               <div class="small text-secondary">
-                Tu peux mettre ici un mini pitch : “3 sorties + 1 review + 1 concert”.
+                1 mail, 3 sons. Vibrations de l'âme.
               </div>
-
               <div class="d-grid mt-3">
-                <a class="btn btn-outline-dark rounded-pill" href="#contact">S’abonner / proposer un son</a>
+                <a class="btn btn-outline-dark rounded-pill" href="#contact">Subscribe &amp; vibe</a>
               </div>
             </div>
           </section>
@@ -185,10 +189,10 @@
             <div class="d-flex align-items-end justify-content-between gap-3 flex-wrap">
               <div>
                 <div class="marker">NEW DROPS</div>
-                <h2 class="h4 fw-bold mb-1">Sorties récentes</h2>
-                <p class="text-secondary mb-0">Cartes style “papier” + stickers.</p>
+                <h2 class="h4 fw-bold mb-1">Fresh off the press.</h2>
+                <p class="text-secondary mb-0">On a fouillé Spotify pour toi, enjoy!</p>
               </div>
-              <a class="btn btn-outline-dark rounded-pill" href="#">Tout voir</a>
+              <a class="btn btn-outline-dark rounded-pill" href="index3.html">Tout voir</a>
             </div>
 
             <div class="row g-3 mt-2">
@@ -197,10 +201,13 @@
                   <div class="paper-body">
                     <div class="d-flex justify-content-between align-items-start gap-2">
                       <div>
-                        <div class="fw-semibold">Titre du track</div>
-                        <div class="small text-secondary">Artiste • 2026</div>
+                        <div class="fw-semibold">Slaughter</div>
+                        <div class="small text-secondary">Central Cee ft J Hus • 2026</div>
                       </div>
-                      <span class="sticker">HOT</span>
+                      <span class="sticker"
+                            data-bs-toggle="tooltip"
+                            data-bs-placement="top"
+                            title="Drop de la semaine sélectionné par la rédac">HOT</span>
                     </div>
                     <div class="d-flex gap-2 flex-wrap mt-2">
                       <span class="badge text-bg-light border">rap</span>
@@ -213,8 +220,8 @@
               <div class="col-md-6">
                 <article class="paper lift">
                   <div class="paper-body">
-                    <div class="fw-semibold">Titre du track</div>
-                    <div class="small text-secondary">Artiste • 2026</div>
+                    <div class="fw-semibold">Always Everywhere</div>
+                    <div class="small text-secondary">Charli XCX • 2026</div>
                     <div class="d-flex gap-2 flex-wrap mt-2">
                       <span class="badge text-bg-light border">indie</span>
                       <span class="badge text-bg-light border">pop</span>
@@ -233,15 +240,12 @@
             <article class="post lift taped">
               <div class="post-grid">
                 <div class="post-cover">
-                  <!-- Option image :
-                  <img src="assets/post1.jpg" class="w-100 h-100 object-fit-cover" alt="Pochette">
-                  -->
-                  <div class="post-placeholder"></div>
+                  <img src="img/post1.jpg" class="w-100 h-100 object-fit-cover" alt="Pochette du Nostalgia Death EP de Hak Baker">
                 </div>
                 <div class="post-content">
-                  <h3 class="h5 fw-bold mb-2">Album review : “Titre”</h3>
+                  <h3 class="h5 fw-bold mb-2">EP review : "Nostalgia Death EP"</h3>
                   <p class="text-secondary mb-3">
-                    Ton intro : sensation + contexte + pourquoi c’est différent.
+                    Nostalgia Death ne s'écoute pas, ça se subit. Hak Baker règle ses comptes avec ses fantômes et la nostalgie qu'il trimballe depuis l'Isle of Dogs. Non pas pour la célébrer, mais pour s'en libérer enfin.
                   </p>
                   <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
                     <span class="small text-secondary">⏱ 4 min</span>
@@ -249,71 +253,92 @@
                   </div>
                 </div>
               </div>
-
               <div class="poster-scribble s3" aria-hidden="true"></div>
             </article>
           </section>
 
-          <!-- LES CASES (grid like taplink) -->
-          <section id="cases" class="zcard reveal delay-2 mt-4">
-            <div class="d-flex align-items-end justify-content-between gap-3 flex-wrap">
-              <div>
-                <div class="marker">CASES</div>
-                <h2 class="h4 fw-bold mb-1">Moodboard / Covers</h2>
-                <p class="text-secondary mb-0">Grille “Instagram” façon ta référence.</p>
+          <!-- CONTACT -->
+          <section id="contact" class="zcard reveal delay-2 mt-4">
+            <div class="row g-4 align-items-start">
+              <div class="col-lg-5">
+                <div class="marker">CONTACT</div>
+                <h2 class="h4 fw-bold mb-2">Proposer un son / un artiste</h2>
+                <p class="text-secondary mb-0">Lien + 2 phrases : pourquoi je dois écouter.</p>
               </div>
-              <span class="small text-secondary">swipe later (option)</span>
-            </div>
 
-            <div class="cases-grid mt-3">
-              <div class="case-tile"></div><div class="case-tile"></div><div class="case-tile"></div>
-              <div class="case-tile"></div><div class="case-tile"></div><div class="case-tile"></div>
-              <div class="case-tile"></div><div class="case-tile"></div><div class="case-tile"></div>
+              <div class="col-lg-7">
+                <form class="row g-3" novalidate>
+
+                  <div class="col-md-6">
+                    <label class="form-label" for="contact-nom">
+                      Nom <span aria-hidden="true" class="text-danger">*</span>
+                    </label>
+                    <input class="form-control rounded-3" type="text" id="contact-nom" name="nom"
+                      placeholder="Ton nom" required aria-required="true" />
+                    <div class="invalid-feedback">Merci d'indiquer ton nom.</div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <label class="form-label" for="contact-email">
+                      Email <span aria-hidden="true" class="text-danger">*</span>
+                    </label>
+                    <input class="form-control rounded-3" type="email" id="contact-email" name="email"
+                      placeholder="toi@mail.com" required aria-required="true" />
+                    <div class="invalid-feedback">Adresse email invalide ou manquante.</div>
+                  </div>
+
+                  <div class="col-12">
+                    <label class="form-label" for="contact-message">
+                      Message <span aria-hidden="true" class="text-danger">*</span>
+                    </label>
+                    <textarea class="form-control rounded-3" id="contact-message" name="message"
+                      rows="4" placeholder="Lien + contexte + vibe…" required aria-required="true"></textarea>
+                    <div class="invalid-feedback">Le message ne peut pas être vide.</div>
+                  </div>
+
+                  <div class="col-12">
+                    <p class="small text-secondary mb-2">
+                      <span aria-hidden="true" class="text-danger">*</span> Champs obligatoires
+                    </p>
+                    <div class="d-flex gap-2 flex-wrap">
+                      <button type="submit" class="btn btn-dark rounded-pill px-4"
+                        data-bs-toggle="tooltip" data-bs-placement="top"
+                        title="Ton message sera traité sous 48h">
+                        Envoyer
+                      </button>
+                      <button type="reset" class="btn btn-outline-dark rounded-pill px-4">Reset</button>
+                    </div>
+                  </div>
+
+                </form>
+              </div>
             </div>
           </section>
 
         </div>
       </div>
 
-      <!-- LE CONTACT -->
-      <section id="contact" class="zcard reveal delay-2 mt-4 mt-md-5">
-        <div class="row g-4 align-items-start">
-          <div class="col-lg-5">
-            <div class="marker">CONTACT</div>
-            <h2 class="h4 fw-bold mb-2">Proposer un son / un artiste</h2>
-            <p class="text-secondary mb-0">Lien + 2 phrases : pourquoi je dois écouter.</p>
-          </div>
-
-          <div class="col-lg-7">
-            <form class="row g-3">
-              <div class="col-md-6">
-                <label class="form-label">Nom</label>
-                <input class="form-control rounded-3" type="text" placeholder="Ton nom">
-              </div>
-              <div class="col-md-6">
-                <label class="form-label">Email</label>
-                <input class="form-control rounded-3" type="email" placeholder="toi@mail.com">
-              </div>
-              <div class="col-12">
-                <label class="form-label">Message</label>
-                <textarea class="form-control rounded-3" rows="4" placeholder="Lien + contexte + vibe…"></textarea>
-              </div>
-              <div class="col-12 d-flex gap-2 flex-wrap">
-                <button type="button" class="btn btn-dark rounded-pill px-4">Envoyer</button>
-                <button type="reset" class="btn btn-outline-dark rounded-pill px-4">Reset</button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </section>
-
       <footer class="py-4 text-center">
-        <div class="handle">@tonpseudo</div>
+        <div class="handle">@rks_rk</div>
       </footer>
 
     </main>
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const tooltipEls = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+    tooltipEls.forEach(el => new bootstrap.Tooltip(el));
+
+    const form = document.querySelector('form');
+    form.addEventListener('submit', function (e) {
+      if (!form.checkValidity()) {
+        e.preventDefault();
+        e.stopPropagation();
+      }
+      form.classList.add('was-validated');
+    });
+  </script>
+
 </body>
 </html>
